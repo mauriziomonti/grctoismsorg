@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Maurizio Monti – Projects</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+        sans-serif;
+      background: #0b0b10;
+      color: #f5f5f5;
+      min-height: 100vh;
+      padding: 40px 20px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .page {
+      width: 100%;
+      max-width: 1100px;
+    }
+
+    header {
+      margin-bottom: 32px;
+    }
+
+    header h1 {
+      font-size: 2.4rem;
+      letter-spacing: 0.03em;
+    }
+
+    header h1 span {
+      display: block;
+      font-size: 0.95rem;
+      opacity: 0.7;
+      margin-top: 8px;
+    }
+
+    /* Three equal project boxes */
+    .projects-grid {
+      display: flex;
+      gap: 24px;
+      justify-content: space-between;
+      align-items: stretch;
+      margin-bottom: 32px;
+    }
+
+    .project-card {
+      background: #151521;
+      border-radius: 18px;
+      padding: 24px 22px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      flex: 1 1 0;          /* equal width for all three */
+      min-width: 0;
+    }
+
+    .project-title {
+      font-size: 1.3rem;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+
+    .project-title small {
+      font-size: 0.8rem;
+      opacity: 0.7;
+      margin-left: 6px;
+    }
+
+    .project-subtitle {
+      font-size: 0.95rem;
+      opacity: 0.85;
+      margin-bottom: 10px;
+    }
+
+    .project-body {
+      font-size: 0.95rem;
+      opacity: 0.9;
+      margin-bottom: 16px;
+    }
+
+    .project-link {
+      margin-top: auto;
+      font-size: 0.95rem;
+      color: #7bdcff;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .project-link:hover {
+      text-decoration: underline;
+    }
+
+    /* Collaboration box below the three */
+    .collaboration {
+      padding: 24px 22px;
+      border-radius: 18px;
+      background: #151521;
+      margin-top: 8px;
+      text-align: center;
+    }
+
+    .collaboration h2 {
+      font-size: 1.4rem;
+      margin-bottom: 10px;
+    }
+
+    .collaboration p {
+      font-size: 0.98rem;
+      opacity: 0.9;
+    }
+
+    .collaboration-btn {
+      display: inline-block;
+      margin-top: 16px;
+      padding: 10px 20px;
+      border-radius: 999px;
+      background-color: #0a66c2;      /* LinkedIn blue */
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+
+    .collaboration-btn:hover {
+      background-color: #004182;
+    }
+
+    /* Stack cards on small screens */
+    @media (max-width: 800px) {
+      .projects-grid {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header>
+      <h1>
+        Areas of Work
+        <span>Selected work by Maurizio Monti</span>
+      </h1>
+    </header>
+
+    <main>
+      <!-- Three equal boxes across the page -->
+      <section class="projects-grid">
+        <article class="project-card">
+          <h2 class="project-title">Governance - Risk - Compliance</h2>
+          <p class="project-subtitle">
+            Making Information Security the driving strategy for growth 
+          </p>
+          <p class="project-body">
+            Leading an innovative approach to information security that creates solid foundations for business areas.
+          </p>
+          <a
+            class="project-link"
+            href="#"
+            aria-label="Projects Page"
+          >
+            More Details Soon →
+          </a>
+        </article>
+
+        <article class="project-card">
+          <h2 class="project-title">
+            ISMS: a strategic business pillar <small>Coming Soon</small>
+          </h2>
+          <p class="project-subtitle">
+            AI powered learning platform (coming soon)
+          </p>
+          <p class="project-body">
+            Building the future of personalized education with adaptive AI technology.
+          </p>
+          <p class="project-body">
+            More Details Soon →
+          </p>
+        </article>
+
+        <article class="project-card">
+          <h2 class="project-title">Library</h2>
+          <p class="project-subtitle">
+            Collection of useful articles and documents
+          </p>
+          <p class="project-body">
+            Research results as I go through standards, regulations and trainings.
+          </p>
+          <p class="project-body">
+            More Details Soon →
+          </p>
+        </article>
+      </section>
+
+      <!-- Box below the three -->
+      <section class="collaboration">
+        <h2>Interested in Collaboration?</h2>
+        <p>I'm interested in start-ups, job roles, freelance collaborations, consultancy</p>
+        <a
+          class="collaboration-btn"
+          href="https://www.linkedin.com/in/mauriziomonti"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Connect on LinkedIn
+        </a>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
